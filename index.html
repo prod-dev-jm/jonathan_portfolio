@@ -57,4 +57,161 @@
             margin-top: 1rem;
         }
 
-        /* Enlarge social icons by 
+        /* Enlarge social icons by 30% and add spacing */
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 1.3rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            font-size: 1.3em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-text {
+                min-width: auto;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-content">
+            <img src="assets/images/IMG_2127.JPG" alt="Bryan Jonathan Martin" class="profile-photo">
+
+            <div class="header-text">
+                <h1>Bryan Jonathan Martin</h1>
+                <p>Data Analyst</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jonathan-martin-56684796/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://bryanjmartin.github.io/jonathan_portfolio/" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="assets/images/Bryan%20Jonathan%20Martin%20Resume.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-text">
+            <p>I'm a data professional with expertise in transforming complex datasets into actionable insights. My work focuses on building automated analytics solutions that improve reporting efficiency, strengthen decision-making, and turn operational data into clear business intelligence.</p>
+            <p>With experience in Tableau, Alteryx, SQL, Power BI, and data modeling, I specialize in designing end-to-end reporting workflows that automate data preparation, streamline analysis, and deliver interactive dashboards for stakeholders and leadership teams.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Technical Skillset</h2>
+        <div class="skills-table">
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Data Visualization</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Tableau</li>
+                    <li>Power BI</li>
+                    <li>Excel Dashboards</li>
+                    <li>KPI Reporting</li>
+                </ul>
+            </div>
+
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-search-plus"></i>
+                    <h3>Data Analysis</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>SQL</li>
+                    <li>Advanced Excel</li>
+                    <li>Google Sheets</li>
+                    <li>Trend & Performance Analysis</li>
+                </ul>
+            </div>
+
+            <div class="skill-column">
+                <div class="skill-header">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Data Modeling & Automation</h3>
+                </div>
+                <ul class="skill-list">
+                    <li>Alteryx Workflow Automation</li>
+                    <li>Star Schema Design</li>
+                    <li>ETL Processes</li>
+                    <li>Scheduled Data Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>FTE Projection Model</h3>
+                <p>This solution combines case management data with Workday workforce data through an automated Alteryx workflow, then delivers the results in Tableau through an interactive dashboard. It enables leaders to monitor historical and current performance, project future headcount and case volume, and identify staffing risks such as backlog exposure, capacity gaps, or overstaffing. The dashboard supports more informed workforce planning and helps drive strategic conversations around operational efficiency and resource allocation.</p>
+                <img src="assets/images/FTE Projection Model_ExecutiveSummary.png" alt="FTE Projection Model preview">
+                <a href="assets/images/FTE%20Projection%20Model_Summary.png" target="_blank" rel="noopener noreferrer" class="btn">Click here to see the Summary View</a>
+                <a href="assets/images/FTE%20Projection%20Model_ManagerView.png" target="_blank" rel="noopener noreferrer" class="btn">Click here to see the Manager View</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Weekly Call Centre Performance Summary</h3>
+                <p>This dashboard was built using an automated Alteryx workflow that prepares and refreshes call centre performance data for visualization in Tableau. It provides leaders with a weekly operational summary, highlights month-over-month performance trends, and tracks key service metrics to support timely decision-making. By automating the reporting process, the solution improves reporting consistency, reduces manual effort, and gives stakeholders faster access to actionable performance insights.</p>
+                <img src="assets/images/Weekly Call Centre Summary_Overview.png" alt="Weekly Call Centre Performance Summary preview">
+                <a href="assets/images/Weekly%20Call%20Centre%20Summary%20Overview%202.png" target="_blank" rel="noopener noreferrer" class="btn">Click here to view the maximum wait time and average speed of answer for the previous week.</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Vacation Calendar</h3>
+                <p>This solution uses an automated Alteryx workflow to retrieve and prepare planned absence data, which is then visualized in Tableau for team leaders and operational managers. The dashboard provides a clear daily view of booked vacation time and remaining availability, helping leaders plan coverage more effectively and make informed scheduling decisions. By automating the end-to-end process, the tool improves visibility, reduces administrative effort, and supports stronger workforce coordination.</p>
+                <img src="assets/images/vac_summary.png" alt="Vacation Calendar preview">
+                <a href="assets/images/vac_main.png" target="_blank" rel="noopener noreferrer" class="btn">Click here for the Agent View.</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Bryan Jonathan Martin. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
